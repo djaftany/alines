@@ -1,0 +1,64 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        display: flex;
+    }
+}
+
+.loading {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.233);
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.loading.show {
+    display: flex;
+    animation: fadeIn .7s;
+    opacity: 1;
+}
+
+.loading.hide {
+    animation: fadeOut .7s;
+    transition-delay: .7s;
+    opacity: 0;
+    display: flex;
+}
+
+@keyframes rotate {
+    0% {}
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.loading_img {
+    width: 100px;
+    animation: rotate 2s ease-in-out infinite;
+}
+
+@media (min-width: 720px) {
+
+    .loading_img {
+        width: 150px;
+    }
+}

@@ -1,0 +1,24 @@
+
+.dashboard,
+.menu,
+.nav,
+.nav_item {
+    display: flex;
+}
+
+.dashboard {
+    flex-direction: column;
+    position: fixed;
+}
+
+.nav {
+    flex-direction: row;
+}
+
+.nav_link {
+
+}
+
+.dashboard_toggler {
+
+}

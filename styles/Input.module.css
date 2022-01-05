@@ -1,0 +1,66 @@
+@keyframes shadow {
+    10% {
+        box-shadow: 0px 0px .3rem var(--blueviolet);
+    }
+    20% {
+        box-shadow: 0px 0px 0rem var(--blueviolet);
+    }
+    30% {
+        box-shadow: 0px 0px .3rem var(--blueviolet);
+    }
+    40% {
+        box-shadow: 0px 0px 0rem var(--blueviolet);
+    }
+    50% {
+        box-shadow: 0px 0px .3rem var(--blueviolet);
+    }
+    60% {
+        box-shadow: 0px 0px 0rem var(--blueviolet);
+    }
+    70% {
+        box-shadow: 0px 0px .3rem var(--blueviolet);
+    }
+    80% {
+        box-shadow: 0px 0px 0rem var(--blueviolet);
+    }
+    90% {
+        box-shadow: 0px 0px .3rem var(--blueviolet);
+    }
+    100% {
+        box-shadow: 0px 0px 0rem var(--blueviolet);
+    }
+}
+
+.field {
+    outline: 0;
+    border: solid 1px var(--blueviolet);
+    border-radius: .2rem;
+    padding: .5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(70, 70, 70);
+    transition: .3s;
+}
+
+.field.error {
+    animation: shadow 7s;
+}
+
+.btn {
+    border: solid 1px var(--blueviolet);
+    border-radius: .2rem;
+    padding: .5rem;
+    font-weight: 550;
+    font-size: .9rem;
+    color: rgb(255, 255, 255);
+    transition: .3s;
+    background-color: var(--blueviolet);
+    cursor: pointer;
+}
+
+.field:focus,
+.btn:focus,
+.btn:hover {
+    box-shadow: 0px 0px .2rem var(--blueviolet);
+    transition: .3s;
+}
