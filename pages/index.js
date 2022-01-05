@@ -23,7 +23,7 @@ export default function Home({ user }) {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Lirix</title>
+				<title>aLines</title>
 				<link rel="icon" href="/img/lirix-dark.png" />
 			</Head>
 			<header>

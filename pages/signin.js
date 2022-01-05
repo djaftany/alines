@@ -66,7 +66,7 @@ const Signin = () => {
     return (
         <>
             <Head>
-                <title>Lirix</title>
+                <title>aLines</title>
                 <link rel="icon" href="/lirix-dark.png" />
             </Head>
             <header>

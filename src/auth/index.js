@@ -1,6 +1,8 @@
 import { destroyCookie } from "nookies"
 
 const signin = async (email) => {
+    if (!email) return null
+
     try {
         const { code } = await (await fetch(
             `${process.env.NEXT_PUBLIC_HOST}/api/users/${email}?api_secret=${process.env.NEXT_PUBLIC_API_SECRET}&mode=signin`,
@@ -16,7 +18,9 @@ const signin = async (email) => {
 }
 
 const signout = async (cookie) => {
-    try {
+    if (!cookie) return null
+
+    try {        
         const { success } = await (await fetch(
             `${process.env.NEXT_PUBLIC_HOST}/api/users/${cookie}?api_secret=${process.env.NEXT_PUBLIC_API_SECRET}&mode=signout`,
             {
@@ -33,6 +37,8 @@ const signout = async (cookie) => {
 }
 
 const user = async (token) => {
+    if (!token) return null
+
     try {
         return await (await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/users/${token}?api_secret=${process.env.NEXT_PUBLIC_API_SECRET}`)).json()
     } catch (error) {
