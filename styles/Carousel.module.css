@@ -110,13 +110,13 @@
 }
 
 .prev {
-  background-image: url('/prev.png');
+  background-image: url('img/prev.png');
   background-size: 1rem 2rem;
   background-repeat: no-repeat;
 }
 
 .next {
-  background-image: url('/next.png');
+  background-image: url('img/next.png');
   background-size: 1rem 2rem;
   background-repeat: no-repeat;
 }
