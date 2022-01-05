@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Navbar from "../../components/navbar"
-import { user } from '../../auth'
+import Navbar from "../../src/comp/navbar"
+import { user } from '../../src/auth'
 import { parseCookies } from 'nookies'
 
 const getServerSideProps = async (context) => {

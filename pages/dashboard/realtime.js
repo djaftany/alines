@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import Navbar from "../../components/navbar"
-import { user } from '../../auth'
+import Navbar from "../../src/comp/navbar"
+import { user } from '../../src/auth'
 import { parseCookies } from 'nookies'
 import styles from '../../styles/RealTime.module.css'
-import Footer from '../../components/footer'
+import Footer from '../../src/comp/footer'
 
 
 const getServerSideProps = async (context) => {
