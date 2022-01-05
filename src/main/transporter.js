@@ -2,9 +2,8 @@ import nodemailer from "nodemailer"
 
 
 const transporter = nodemailer.createTransport({
-    host: "smtp-mail.outlook.com",
+    host: 'smtp.ethereal.email',
     port: 587,
-    secureConnection: false,
     auth: {
         user: process.env.EMAIL_USERNAME,
         pass: process.env.EMAIL_PASSWORD,

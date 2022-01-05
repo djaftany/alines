@@ -123,12 +123,12 @@
 
 @media (min-width: 1300px) {
   .carousel_content {
-    height: 40rem;
+    height: 35rem;
   }
 }
 
 @media (min-width: 1500px) {
   .carousel_content {
-    height: 45rem;
+    height: 40rem;
   }
 }
