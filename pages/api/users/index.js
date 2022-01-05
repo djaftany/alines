@@ -1,7 +1,7 @@
-import { isAuth } from "../../../lib/middleware"
-import { save, get } from "../../../lib/user"
-import { generator } from '../../../lib/generator'
-import { emails, send } from "../../../email"
+import { isAuth } from "../../../src/main/middleware"
+import { save, get } from "../../../src/main/user"
+import { generator } from '../../../src/main/generator'
+import { emails, send } from "../../../src/service/email"
 
 const handlers = {
     post: async ({ body }, response) => {
