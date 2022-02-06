@@ -2,20 +2,17 @@ import nodemailer from "nodemailer"
 
 
 const transporter = nodemailer.createTransport({
-    host: 'smtp.ethereal.email',
+    host: 'smtp.aervel.tech	',
     port: 587,
     auth: {
         user: process.env.EMAIL_USERNAME,
         pass: process.env.EMAIL_PASSWORD,
     },
-    tls: {
-        ciphers: 'SSLv3'
-    },
     logger: true,
     options: {
-        from: "support@lirix.com",
-        sender: "support@lirix.com",
-        subject: "Lirix",
+        from: "support@alines.com",
+        sender: "support@alines.com",
+        subject: "aLines",
         encoding: "UTF-8",
     },
 }) || global.transporter

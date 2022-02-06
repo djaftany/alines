@@ -146,7 +146,7 @@ const Account = () => {
 const Support = () => {
     return (
         <li className={styles.nav_item}>
-            <Link href={'#'}><a href={'#'} className={styles.nav_link} id={'support'}>Support</a></Link>
+            <Link href={'/support'}><a href={'#'} className={styles.nav_link} id={'support'}>Support</a></Link>
         </li>
     )
 }
